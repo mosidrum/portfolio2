@@ -149,7 +149,6 @@
   .modal-ctn {
     display: flex;
     flex-direction: column;
-    margin: 1px 0px;
   }
 
   .modal-ctn img {
