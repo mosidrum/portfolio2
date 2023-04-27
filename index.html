@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="index.css"
+		/>
+    <link rel="stylesheet" href="./modal.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Mosidrum | Portfolio</title>
+	</head>
+		<header>
+      <a href="#"><span>Isaac Mosiron</span></a>
+      <div class="icons2" onclick="showMenu()">
+        <i class="fa fa-bars"></i>
+      </div>
+			<nav>
+        <ul id="menu">
+          <li>
+            <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+          </li>
+          <div class="envelop"><i class="fa-regular fa-envelope"></i></div>
+          <div class="cancel" id="close" onclick="closeMenu()"><i class="fa fa-times"></i></div>
+        </ul>
+
+			</nav>
+		</header>
+		<main class="body">
+			<section class="main">
+				<div class="text">
+          <h1>Hey There. I’m Isaac.</h1>
+          <h2 class="text-top">I'm a Software Developer</h2>
+          <p class="text-down">
+            I can help you build a product, feature or website Look through some
+            of my work and experience! If you like what you see and have a project
+            you need coded, don’t hesitate to contact me.
+          </p>
+        </div>
+				<ul class="icons">
+					<li>
+						<a href="https://linkedin.com/ayodeleisaac"
+							><img src="./assets/GroupI.png" alt="linkedin image of ayodele Isaac"
+						/></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/mosidrum"
+							><img src="./assets/GroupT.png" alt="twitter image of ayodele isaac"
+						/></a>
+					</li>
+					<li>
+						<a href="https://github.com/mosidrum"
+							><img src="./assets/VectorG.png" alt="github image of ayodele isaac"
+						/></a>
+					</li>
+					<li>
+						<a href="https://linkedin.com/in"><img src="./assets/VectorH.png" alt="medium image of ayodele isaac" /></a>
+					</li>
+					<li>
+						<a href="https://medium.com/ayodeleisaac"
+							><img src="./assets/VectorM.png" alt="social image of ayodele isaac"
+						/></a>
+					</li>
+				</ul>
+			</section>
+
+      <section id="portfolio"></section>
+      <section id="about"></section>
+
+      <script src="./script/functions.js"></script>
+    <script src="./script/create.js"></script>
+	</main>
+</html>
