@@ -82,7 +82,6 @@ li {
 
 .about-section-content li {
   font-family: "Inter", sans-serif;
-  font-style: normal, sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
@@ -166,7 +165,7 @@ li {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 1em;
-  font-size: 18pt;
+  font-size: 18px;
   line-height: 24px;
   align-items: center;
   text-align: center;

@@ -47,7 +47,6 @@
   }
 
   .headline_section {
-    overflow: none;
     display: flex;
     background-image: url(../Images/Illustration-header.svg);
     background-position: right top;

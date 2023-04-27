@@ -21,8 +21,6 @@ if (parseFormData) {
   message.value = parseFormData.message;
 }
 
-//Validate email
-
 function validateEmail() {
   let email = document.getElementById('email').value;
   let msg = document.getElementById('textarea').value;
@@ -41,8 +39,6 @@ function validateEmail() {
     }, 1000);
   }
 }
-
-//mobile menu
 
 function showMenu() {
   const menu = document.getElementById('menu');

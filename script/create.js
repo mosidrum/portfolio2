@@ -128,8 +128,6 @@ for (let i = 0; i < projectTitles.length; i += 1) {
 }
 body.appendChild(modalSection);
 
-
-
 const cardSection = document.createElement('section');
 cardSection.classList.add('card-section');
 
