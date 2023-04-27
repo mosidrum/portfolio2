@@ -155,7 +155,6 @@ span {
   text-transform: uppercase;
   color: transparent;
   -webkit-background-clip: text;
-  /* background-clip: text; */
   background-size: 400%;
   transition: 0.3s ease;
   animation: move 5s ease infinite;
