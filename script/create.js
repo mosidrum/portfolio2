@@ -30,7 +30,7 @@ recentContent.forEach((e) => {
           <button><li>${e.buttons[1]}</li></button>
           <button><li>${e.buttons[2]}</li></button>
           <button><li>${e.buttons[3]}</li></button>
-          <button class="two"><li>${e.buttons[4]}</li></button>
+          <button class="two" onclick="togglePopup(${0})"><li>${e.buttons[4]}</li></button>
         </ul>
       </div>
     </div>
@@ -83,7 +83,8 @@ function togglePopup(value) {
   }
 }
 
-const modalSection = document.createElement('section');
+const modalSection = document.createElement('div');
+modalSection.className = 'modal-container';
 
 for (let i = 0; i < projectTitles.length; i += 1) {
   modalSection.innerHTML += `
