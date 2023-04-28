@@ -24,7 +24,6 @@
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px;
   z-index: 4;
 }
 
@@ -46,6 +45,11 @@
   display: flex;
   justify-content: space-between;
   color: #172b4d;
+}
+
+.modal-head h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .modal-ctn .modal-text {
@@ -104,30 +108,63 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .modal {
-    width: 100%;
-    height: 100vh;
-    display: none;
-  }
-
-  .modal .modal-overlay {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: auto;
-    background: rgba(0, 0, 0, 0.7);
-  }
-
   .modal-content {
-    display: flex;
-    flex-direction: column;
-    height: 150vh;
-    margin-top: 0;
+    height: 95vh;
+    margin-top: 10px;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .modal-content .modal-ctn {
+  .modal-head h2 {
+    font-size: 18px;
+  }
+
+  .modal-overlay {
+    margin: auto;
+  }
+
+  .modal-head .modal-close-btn {
+    font-size: 26px;
+  }
+
+  .modal-btn button {
+    padding: 3px 8px;
+    margin-bottom: 10px;
+    background: #fffdfd;
+    border: 1px solid;
+  }
+
+  .modal-text .modal-text-ctn {
+    font-size: 10px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    width: 300px;
+  }
+
+  .modal-ctn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-ctn img {
+    width: 310px;
+    height: 160px;
+  }
+
+  .modal-click {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .modal-click button {
+    padding: 8px;
+    margin-left: 20px;
   }
 }

@@ -155,7 +155,6 @@ span {
   text-transform: uppercase;
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   background-size: 400%;
   transition: 0.3s ease;
   animation: move 5s ease infinite;
@@ -304,7 +303,6 @@ footer h2 {
 
 button {
   padding: 7px;
-  border-radius: none;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
   border-style: none;
@@ -884,7 +882,7 @@ form textarea:placeholder-shown {
     top: -350px;
     background-image: url(./Assets/desktop-about.png);
     background-size: 35rem;
-    background-position: 10rem right;
+    background-position: right;
     background-position-y: 7rem;
   }
 

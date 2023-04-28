@@ -30,7 +30,7 @@ recentContent.forEach((e) => {
           <button><li>${e.buttons[1]}</li></button>
           <button><li>${e.buttons[2]}</li></button>
           <button><li>${e.buttons[3]}</li></button>
-          <button class="two"><li>${e.buttons[4]}</li></button>
+          <button class="two" onclick="togglePopup(${0})"><li>${e.buttons[4]}</li></button>
         </ul>
       </div>
     </div>
@@ -72,6 +72,62 @@ const cardSectionsData = [
   },
 ];
 
+const projectTitles = cardSectionsData.map((e) => e.title);
+
+function togglePopup(value) {
+  const click = document.getElementById(`modal${value}`);
+  if (click.style.display === 'block') {
+    click.style.display = 'none';
+  } else {
+    click.style.display = 'block';
+  }
+}
+
+const modalSection = document.createElement('div');
+modalSection.className = 'modal-container';
+
+for (let i = 0; i < projectTitles.length; i += 1) {
+  modalSection.innerHTML += `
+    <div class="modal" id='modal${i}'>
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <div class="modal-head">
+            <h2>${projectTitles[i]}</h2>
+            <span class="modal-close-btn" onclick=togglePopup(${i})>&times;</span>
+          </div>
+          <div class="modal-btn">
+            <button>HTML</button>
+            <button>Boostrap</button>
+            <button>Ruby on rails</button>
+          </div>
+          <div class="modal-ctn">
+            <img src="./Assets/modal.png" alt="image">
+              <div class="modal-text">
+                <div class="modal-text-ctn">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum a atque, rerum
+                    cupiditate et consectetur. Obcaecati, excepturi. Illo enim, ipsa repudiandae dolorem
+                    similique hic? Fuga odio aperiam vero error molestiae!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolor odit atque
+                    quas molestiae quo. Itaque repellat tempore autem minima minus cum. Illo dolor nobis
+                    beatae accusamus quia enim deleniti.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque impedit labore rem,
+                    aut, sit ullam officia error nostrum pariatur, voluptas dolor. Odit illum quisquam
+                    voluptas commodi harum! Numquam, in nostrum!</p>
+                </div>
+                <div class="modal-click">
+                  <button class="modal-live">See live<img src="./Assets/Icon-Export.png" alt="see live">
+                  </button>
+                  <button class="modal-github">See source<img src="../Assets/VectorG.png" alt="github">
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+}
+body.appendChild(modalSection);
 
 const cardSection = document.createElement('section');
 cardSection.classList.add('card-section');
